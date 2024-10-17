@@ -2,7 +2,7 @@ import {
     useEffect,
     useState,
   } from "react";
-  import { getAllPatterns } from "../Service/Pattern.js";
+  import { getAllPatterns } from "../../Service/Pattern.js";
   import MainList from "./MainList.js";
   
   const Main = () => {

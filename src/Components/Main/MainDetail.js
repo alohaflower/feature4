@@ -1,7 +1,7 @@
 import {useEffect, useState, React} from "react";
 import { Link, useParams } from "react-router-dom";
-import { getReviews } from "../Service/Review.js";
-import { getOnePattern } from "../Service/Pattern.js";
+import { getReviews } from "../../Service/Review.js";
+import { getOnePattern } from "../../Service/Pattern.js";
   
 
 const MainDetail = () => {
@@ -27,7 +27,7 @@ const MainDetail = () => {
               (pattern) =>
                 <li key={pattern.id}>
                    <img
-                    src={require(`../Images/${pattern.imgName}.jpeg`)}
+                    src={require(`../../Images/${pattern.imgName}.jpeg`)}
                     width="225"
                     height="300"
                   />

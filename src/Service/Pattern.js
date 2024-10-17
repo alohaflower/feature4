@@ -1,10 +1,6 @@
 import Parse from "parse";
-import * as ENV from '../environments.js';
-
 
 export const getAllPatterns = async () => {
-    Parse.initialize(ENV.APPLICATION_ID,ENV.JAVASCRIPT_KEY);
-    Parse.serverURL = ENV.SERVER_URL;
     const Pattern = Parse.Object.extend("plushies");
     const query = new Parse.Query(Pattern);
 
@@ -23,8 +19,6 @@ export const getAllPatterns = async () => {
 };
 
 export const getOnePattern = async (id) => {
-    Parse.initialize(ENV.APPLICATION_ID,ENV.JAVASCRIPT_KEY);
-    Parse.serverURL = ENV.SERVER_URL;
     const Pattern = Parse.Object.extend("plushies");
     const query = new Parse.Query(Pattern);
 

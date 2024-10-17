@@ -1,10 +1,7 @@
 import Parse from "parse";
-import * as ENV from '../environments.js';
 
 
 export const getReviews = async (id) => {
-    Parse.initialize(ENV.APPLICATION_ID,ENV.JAVASCRIPT_KEY);
-    Parse.serverURL = ENV.SERVER_URL;
     const Review = Parse.Object.extend("reviews");
     const Plushie = Parse.Object.extend("plushies");
     const query = new Parse.Query(Review);

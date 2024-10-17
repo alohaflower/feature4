@@ -16,7 +16,7 @@ const MainList = ({ patterns }) => {
               </div>
               <div>
                 <img
-                  src={require(`../Images/${pattern.imgName}.jpeg`)}
+                  src={require(`../../Images/${pattern.imgName}.jpeg`)}
                   width="225"
                   height="300"
                 />
