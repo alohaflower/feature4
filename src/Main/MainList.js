@@ -10,7 +10,7 @@ const MainList = ({ patterns }) => {
           (pattern) =>
             <li key={pattern.id}>
               <div>
-                <Link to={pattern.imgName}>{pattern.humanName} the {pattern.animal}</Link>
+                <Link to={pattern.id}>{pattern.humanName} the {pattern.animal}</Link>
                 <span> | ${pattern.cost}</span>
                 <span> | {pattern.description} </span>
               </div>
