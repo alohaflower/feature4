@@ -1,5 +1,6 @@
 import Parse from "parse";
 
+//get all patterns
 export const getAllPatterns = async () => {
     const Pattern = Parse.Object.extend("plushies");
     const query = new Parse.Query(Pattern);
@@ -18,6 +19,7 @@ export const getAllPatterns = async () => {
     return formattedResults;
 };
 
+//get one pattern based on id
 export const getOnePattern = async (id) => {
     const Pattern = Parse.Object.extend("plushies");
     const query = new Parse.Query(Pattern);
